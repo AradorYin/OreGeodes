@@ -15,7 +15,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(ModBlocks._BLOCK);
+        blockWithItem(ModBlocks.COAL_SHARD_BLOCK);
+        blockWithItem(ModBlocks.COPPER_SHARD_BLOCK);
+        blockWithItem(ModBlocks.DIAMOND_SHARD_BLOCK);
+        blockWithItem(ModBlocks.EMERALD_SHARD_BLOCK);
+        blockWithItem(ModBlocks.FLINT_SHARD_BLOCK);
+        blockWithItem(ModBlocks.GOLD_SHARD_BLOCK);
+        blockWithItem(ModBlocks.IRON_SHARD_BLOCK);
+        blockWithItem(ModBlocks.LAPIS_SHARD_BLOCK);
+        blockWithItem(ModBlocks.NETHERITE_SHARD_BLOCK);
+        blockWithItem(ModBlocks.QUARTZ_SHARD_BLOCK);
+        blockWithItem(ModBlocks.REDSTONE_SHARD_BLOCK);
+        blockWithItem(ModBlocks.SLIME_SHARD_BLOCK);
     }
 
     private void blockWithItem(DeferredBlock<Block> deferredBlock) {

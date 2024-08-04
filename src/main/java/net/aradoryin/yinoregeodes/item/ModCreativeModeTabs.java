@@ -17,7 +17,7 @@ public class ModCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> GEODE_ITEMS_TAB = CREATIVE_MODE_TABS.register("geode_items_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.yinoregeodes.geode_items_tab"))
-            .icon(() -> new ItemStack(ModItems.NETHERITE_SHARD.get()))
+            .icon(() -> new ItemStack(ModItems.COPPER_SHARD.get()))
             .displayItems(((itemDisplayParameters, output) -> {
                 output.accept(ModItems.COAL_SHARD);
                 output.accept(ModItems.COPPER_SHARD);
@@ -35,10 +35,21 @@ public class ModCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> GEODE_BLOCKS_TAB = CREATIVE_MODE_TABS.register("geode_blocks_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.yinoregeodes.geode_blocks_tab"))
-            .icon(() -> new ItemStack(ModBlocks._BLOCK))
+            .icon(() -> new ItemStack(ModBlocks.COPPER_SHARD_BLOCK))
             .withTabsBefore(ResourceLocation.fromNamespaceAndPath(OreGeodeMod.MOD_ID, "geode_items_tab"))
             .displayItems(((itemDisplayParameters, output) -> {
-                output.accept(ModBlocks._BLOCK);
+                output.accept(ModBlocks.COAL_SHARD_BLOCK);
+                output.accept(ModBlocks.COPPER_SHARD_BLOCK);
+                output.accept(ModBlocks.DIAMOND_SHARD_BLOCK);
+                output.accept(ModBlocks.EMERALD_SHARD_BLOCK);
+                output.accept(ModBlocks.FLINT_SHARD_BLOCK);
+                output.accept(ModBlocks.GOLD_SHARD_BLOCK);
+                output.accept(ModBlocks.IRON_SHARD_BLOCK);
+                output.accept(ModBlocks.LAPIS_SHARD_BLOCK);
+                output.accept(ModBlocks.NETHERITE_SHARD_BLOCK);
+                output.accept(ModBlocks.QUARTZ_SHARD_BLOCK);
+                output.accept(ModBlocks.REDSTONE_SHARD_BLOCK);
+                output.accept(ModBlocks.SLIME_SHARD_BLOCK);
             })).build());
 
     public static void register(IEventBus eventBus) {

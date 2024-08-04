@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.Block;
 
 public class ModTags {
     public static class Blocks {
+        public static final TagKey<Block> SHARD_STORAGE_BLOCKS = createTag("shard_storage_blocks");
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(OreGeodeMod.MOD_ID, name));
         }
