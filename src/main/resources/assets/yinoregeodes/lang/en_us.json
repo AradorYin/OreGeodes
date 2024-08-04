@@ -1,0 +1,19 @@
+{
+  "item.yinoregeodes.coal_shard": "Coal Shard",
+  "item.yinoregeodes.copper_shard": "Copper Shard",
+  "item.yinoregeodes.diamond_shard": "Diamond Shard",
+  "item.yinoregeodes.emerald_shard": "Emerald Shard",
+  "item.yinoregeodes.flint_shard": "Flint Shard",
+  "item.yinoregeodes.gold_shard": "Gold Shard",
+  "item.yinoregeodes.iron_shard": "Iron Shard",
+  "item.yinoregeodes.lapis_lazuli_shard": "Lapis Lazuli Shard",
+  "item.yinoregeodes.netherite_shard": "Netherite Shard",
+  "item.yinoregeodes.quartz_shard": "Quartz Shard",
+  "item.yinoregeodes.redstone_shard": "Redstone Shard",
+  "item.yinoregeodes.slime_shard": "Slime Shard",
+
+  "block.yinoregeodes._block": "Block of ",
+
+  "itemGroup.yinoregeodes.geode_items_tab": "Geode Items Tab",
+  "itemGroup.yinoregeodes.geode_blocks_tab": "Geode Blocks Tab"
+}
