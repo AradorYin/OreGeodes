@@ -20,7 +20,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.FLINT_SHARD.get());
         basicItem(ModItems.GOLD_SHARD.get());
         basicItem(ModItems.IRON_SHARD.get());
-        basicItem(ModItems.LAPIS_LAZULI_SHARD.get());
+        basicItem(ModItems.LAPIS_SHARD.get());
         basicItem(ModItems.NETHERITE_SHARD.get());
         basicItem(ModItems.QUARTZ_SHARD.get());
         basicItem(ModItems.REDSTONE_SHARD.get());

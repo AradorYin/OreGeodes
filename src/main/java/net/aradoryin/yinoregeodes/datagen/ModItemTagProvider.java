@@ -30,7 +30,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.FLINT_SHARD.get())
                 .add(ModItems.GOLD_SHARD.get())
                 .add(ModItems.IRON_SHARD.get())
-                .add(ModItems.LAPIS_LAZULI_SHARD.get())
+                .add(ModItems.LAPIS_SHARD.get())
                 .add(ModItems.NETHERITE_SHARD.get())
                 .add(ModItems.QUARTZ_SHARD.get())
                 .add(ModItems.REDSTONE_SHARD.get())

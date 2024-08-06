@@ -17,7 +17,7 @@ public class ModItems
     public static final DeferredItem<Item> FLINT_SHARD = ITEMS.registerSimpleItem("flint_shard");
     public static final DeferredItem<Item> GOLD_SHARD = ITEMS.registerSimpleItem("gold_shard");
     public static final DeferredItem<Item> IRON_SHARD = ITEMS.registerSimpleItem("iron_shard");
-    public static final DeferredItem<Item> LAPIS_LAZULI_SHARD = ITEMS.registerSimpleItem("lapis_lazuli_shard");
+    public static final DeferredItem<Item> LAPIS_SHARD = ITEMS.registerSimpleItem("lapis_shard");
     public static final DeferredItem<Item> NETHERITE_SHARD = ITEMS.registerSimpleItem("netherite_shard");
     public static final DeferredItem<Item> QUARTZ_SHARD = ITEMS.registerSimpleItem("quartz_shard");
     public static final DeferredItem<Item> REDSTONE_SHARD = ITEMS.registerSimpleItem("redstone_shard");
