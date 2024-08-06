@@ -1,25 +1,38 @@
 
-Installation information
-=======
+Yin's Ore Geodes
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+Discover Hidden Treasures Within the Earth!
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+Are you tired of the same old ore veins in Minecraft 1.21? Dive into the exciting world of Yin's Ore Geodes, a mod that adds a new layer of mining adventure with stunning ore geodes.
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+## Features:
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+- **Natural Generation:** Geodes spawn organically underground, adding a touch of excitement to exploration.
+- **Fair Distribution:** Each geode type has a balanced chance of spawning, preventing any single resource from becoming too dominant.
+- **Customizable:** Tweak geode spawn rates and sizes to suit your preferences (optional configuration file). (TO BE ADDED)
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+## Planned Additions:
+
+- **New Hammers & Tools:** Specialized tools for efficient geode extraction.
+- **Unique Items & Blocks:** Discover artifacts and construct structures related to geodes.
+
+## Installation:
+
+1. Ensure you have Minecraft NeoForge 1.21 installed.
+2. Download the latest version of the Yin's Ore Geodes mod.
+3. Place the mod file in your Minecraft `mods` folder.
+4. Launch Minecraft and enjoy the geode-filled adventure!
+
+## Compatibility:
+
+This mod is designed for Minecraft NeoForge 1.21 and may not function correctly with other versions.
+
+## Feedback & Support:
+
+Share your thoughts, suggestions, and bug reports on our [GitHub page/Discord server/forum thread].
+
+## Disclaimer:
+
+This is a work in progress. Expect updates, improvements, and the occasional bug. 
+
+Let's make Minecraft even more geode-tastic!
