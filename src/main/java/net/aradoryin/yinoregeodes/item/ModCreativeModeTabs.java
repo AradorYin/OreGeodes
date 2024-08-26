@@ -31,6 +31,13 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.QUARTZ_SHARD);
                 output.accept(ModItems.REDSTONE_SHARD);
                 output.accept(ModItems.SLIME_SHARD);
+                // Hammers
+                output.accept(ModItems.AMETHYST_HAMMER);
+                output.accept(ModItems.DIAMOND_HAMMER);
+                output.accept(ModItems.ECHO_HAMMER);
+                output.accept(ModItems.GOLD_HAMMER);
+                output.accept(ModItems.IRON_HAMMER);
+                output.accept(ModItems.NETHERITE_HAMMER);
             })).build());
 
     public static final Supplier<CreativeModeTab> GEODE_BLOCKS_TAB = CREATIVE_MODE_TABS.register("geode_blocks_tab", () -> CreativeModeTab.builder()

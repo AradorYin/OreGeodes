@@ -6,10 +6,12 @@ import net.aradoryin.yinoregeodes.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 import org.jetbrains.annotations.NotNull;
 
@@ -27,7 +29,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> COAL_SMELTABLES = List.of(ModBlocks.COAL_SHARD_BLOCK);
         List<ItemLike> COPPER_SMELTABLES = List.of(ModBlocks.COPPER_SHARD_BLOCK);
         List<ItemLike> DIAMOND_SMELTABLES = List.of(ModBlocks.DIAMOND_SHARD_BLOCK);
-        List<ItemLike> ECHO_SMELTABLES = List.of(ModBlocks.ECHO_SHARD_BLOCK);
         List<ItemLike> EMERALD_SMELTABLES = List.of(ModBlocks.EMERALD_SHARD_BLOCK);
         List<ItemLike> FLINT_SMELTABLES = List.of(ModBlocks.FLINT_SHARD_BLOCK);
         List<ItemLike> GOLD_SMELTABLES = List.of(ModBlocks.GOLD_SHARD_BLOCK);
@@ -38,7 +39,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> REDSTONE_SMELTABLES = List.of(ModBlocks.REDSTONE_SHARD_BLOCK);
         List<ItemLike> SLIME_SMELTABLES = List.of(ModBlocks.SLIME_SHARD_BLOCK);
 
-        //Shard Storage Recipes
+        // Shard Storage Recipes
         shardStorageRecipe(recipeOutput, ModBlocks.COAL_SHARD_BLOCK.get(), ModItems.COAL_SHARD.get());
         shardStorageRecipe(recipeOutput, ModBlocks.COPPER_SHARD_BLOCK.get(), ModItems.COPPER_SHARD.get());
         shardStorageRecipe(recipeOutput, ModBlocks.DIAMOND_SHARD_BLOCK.get(), ModItems.DIAMOND_SHARD.get());
@@ -53,20 +54,42 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         shardStorageRecipe(recipeOutput, ModBlocks.REDSTONE_SHARD_BLOCK.get(), ModItems.REDSTONE_SHARD.get());
         shardStorageRecipe(recipeOutput, ModBlocks.SLIME_SHARD_BLOCK.get(), ModItems.SLIME_SHARD.get());
 
-        // Temporary Recipes
+        // Hammer Recipes
+        hammerRecipe(recipeOutput, ModItems.AMETHYST_HAMMER.get(), Blocks.AMETHYST_BLOCK);
+        hammerRecipe(recipeOutput, ModItems.DIAMOND_HAMMER.get(), Blocks.DIAMOND_BLOCK);
+        hammerRecipe(recipeOutput, ModItems.ECHO_HAMMER.get(), ModBlocks.ECHO_SHARD_BLOCK);
+        hammerRecipe(recipeOutput, ModItems.GOLD_HAMMER.get(), Blocks.GOLD_BLOCK);
+        hammerRecipe(recipeOutput, ModItems.IRON_HAMMER.get(), Blocks.IRON_BLOCK);
+        hammerRecipe(recipeOutput, ModItems.NETHERITE_HAMMER.get(), Blocks.NETHERITE_BLOCK);
+
+
+        // Temporary Smelting Recipes
         fSmelting(recipeOutput, COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL, 0.25f, 200, "coal_smelting");
-        fSmelting(recipeOutput, COPPER_SMELTABLES, RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "coal_smelting");
-        fSmelting(recipeOutput, DIAMOND_SMELTABLES, RecipeCategory.MISC, Items.DIAMOND, 0.25f, 200, "coal_smelting");
-        fSmelting(recipeOutput, ECHO_SMELTABLES, RecipeCategory.MISC, Items.ECHO_SHARD, 0.25f, 200, "coal_smelting");
-        fSmelting(recipeOutput, EMERALD_SMELTABLES, RecipeCategory.MISC, Items.EMERALD, 0.25f, 200, "coal_smelting");
-        fSmelting(recipeOutput, FLINT_SMELTABLES, RecipeCategory.MISC, Items.FLINT, 0.25f, 200, "coal_smelting");
-        fSmelting(recipeOutput, GOLD_SMELTABLES, RecipeCategory.MISC, Items.GOLD_INGOT, 0.25f, 200, "coal_smelting");
-        fSmelting(recipeOutput, IRON_SMELTABLES, RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "coal_smelting");
-        fSmelting(recipeOutput, LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "coal_smelting");
-        fSmelting(recipeOutput, NETHERITE_SMELTABLES, RecipeCategory.MISC, Items.NETHERITE_INGOT, 0.25f, 200, "coal_smelting");
-        fSmelting(recipeOutput, QUARTZ_SMELTABLES, RecipeCategory.MISC, Items.QUARTZ, 0.25f, 200, "coal_smelting");
-        fSmelting(recipeOutput, REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "coal_smelting");
-        fSmelting(recipeOutput, SLIME_SMELTABLES, RecipeCategory.MISC, Items.SLIME_BALL, 0.25f, 200, "coal_smelting");
+        fSmelting(recipeOutput, COPPER_SMELTABLES, RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "copper_smelting");
+        fSmelting(recipeOutput, DIAMOND_SMELTABLES, RecipeCategory.MISC, Items.DIAMOND, 0.25f, 200, "diamond_smelting");
+        fSmelting(recipeOutput, EMERALD_SMELTABLES, RecipeCategory.MISC, Items.EMERALD, 0.25f, 200, "emerald_smelting");
+        fSmelting(recipeOutput, FLINT_SMELTABLES, RecipeCategory.MISC, Items.FLINT, 0.25f, 200, "flint_smelting");
+        fSmelting(recipeOutput, GOLD_SMELTABLES, RecipeCategory.MISC, Items.GOLD_INGOT, 0.25f, 200, "gold_smelting");
+        fSmelting(recipeOutput, IRON_SMELTABLES, RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "iron_smelting");
+        fSmelting(recipeOutput, LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "lapis_smelting");
+        fSmelting(recipeOutput, NETHERITE_SMELTABLES, RecipeCategory.MISC, Items.NETHERITE_INGOT, 0.25f, 200, "netherite_smelting");
+        fSmelting(recipeOutput, QUARTZ_SMELTABLES, RecipeCategory.MISC, Items.QUARTZ, 0.25f, 200, "quartz_smelting");
+        fSmelting(recipeOutput, REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "redstone_smelting");
+        fSmelting(recipeOutput, SLIME_SMELTABLES, RecipeCategory.MISC, Items.SLIME_BALL, 0.25f, 200, "slime_smelting");
+
+        // Temporary Blasting Recipes
+        bBlasting(recipeOutput, COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL, 0.25f, 200, "coal_smelting");
+        bBlasting(recipeOutput, COPPER_SMELTABLES, RecipeCategory.MISC, Items.COPPER_INGOT, 0.5f, 180, "copper_smelting");
+        bBlasting(recipeOutput, DIAMOND_SMELTABLES, RecipeCategory.MISC, Items.DIAMOND, 0.5f, 180, "diamond_smelting");
+        bBlasting(recipeOutput, EMERALD_SMELTABLES, RecipeCategory.MISC, Items.EMERALD, 0.5f, 180, "emerald_smelting");
+        bBlasting(recipeOutput, FLINT_SMELTABLES, RecipeCategory.MISC, Items.FLINT, 0.5f, 180, "flint_smelting");
+        bBlasting(recipeOutput, GOLD_SMELTABLES, RecipeCategory.MISC, Items.GOLD_INGOT, 0.5f, 180, "gold_smelting");
+        bBlasting(recipeOutput, IRON_SMELTABLES, RecipeCategory.MISC, Items.IRON_INGOT, 0.5f, 180, "iron_smelting");
+        bBlasting(recipeOutput, LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.5f, 180, "lapis_smelting");
+        bBlasting(recipeOutput, NETHERITE_SMELTABLES, RecipeCategory.MISC, Items.NETHERITE_INGOT, 0.5f, 180, "netherite_smelting");
+        bBlasting(recipeOutput, QUARTZ_SMELTABLES, RecipeCategory.MISC, Items.QUARTZ, 0.5f, 180, "quartz_smelting");
+        bBlasting(recipeOutput, REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.5f, 180, "redstone_smelting");
+        bBlasting(recipeOutput, SLIME_SMELTABLES, RecipeCategory.MISC, Items.SLIME_BALL, 0.5f, 180, "slime_smelting");
 
 //        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.s_SHARD.get())
 //                .requires(ModBlocks._BLOCK.get())
@@ -87,6 +110,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("##")
                 .unlockedBy(getHasName(ingredient), has(ingredient))
                 .save(recipeOutput, OreGeodeMod.MOD_ID + ":" + getItemName(result) + "_shard_storage_recipe_" + getItemName(ingredient));
+    }
+
+    /**
+     * Generates a recipe for creating a shard storage block using the specified block and item.
+     *
+     * @param  result  the output of the recipe
+     * @param  ingredient   the input of the recipe for the head of the hammer
+     */
+    private void hammerRecipe(RecipeOutput recipeOutput, Item result, ItemLike ingredient) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 1)
+                .define('#', ingredient)
+                .define('l', Items.STICK)
+                .pattern("###")
+                .pattern(" l ")
+                .pattern(" l ")
+                .unlockedBy(getHasName(ingredient), has(ingredient))
+                .unlockedBy(getHasName(Items.STICK), has(Items.STICK))
+                .save(recipeOutput, OreGeodeMod.MOD_ID + ":" + getItemName(result) + "_hammer_recipe_" + getItemName(ingredient));
     }
 
     /**

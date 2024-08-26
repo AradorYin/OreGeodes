@@ -35,50 +35,62 @@ public class ModPlacedFeatures {
                 List.of(RarityFilter.onAverageOnceEvery(58), InSquarePlacement.spread(),
                         HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(50)),
                         BiomeFilter.biome()));
+
         register(context, COPPER_GEODE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.COPPER_GEODE_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(58), InSquarePlacement.spread(),
                         HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(50)),
                         BiomeFilter.biome()));
+
         register(context, DIAMOND_GEODE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.DIAMOND_GEODE_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(65), InSquarePlacement.spread(),
                         HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(50)),
                         BiomeFilter.biome()));
+
         register(context, ECHO_GEODE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ECHO_GEODE_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(80), InSquarePlacement.spread(),
                         HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(50)),
                         BiomeFilter.biome()));
+
         register(context, EMERALD_GEODE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.EMERALD_GEODE_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(60), InSquarePlacement.spread(),
                         HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(50)),
                         BiomeFilter.biome()));
+
         register(context, FLINT_GEODE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.FLINT_GEODE_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(58), InSquarePlacement.spread(),
                         HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(50)),
                         BiomeFilter.biome()));
+
         register(context, GOLD_GEODE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.GOLD_GEODE_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(58), InSquarePlacement.spread(),
                         HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(50)),
                         BiomeFilter.biome()));
+
         register(context, IRON_GEODE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.IRON_GEODE_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(58), InSquarePlacement.spread(),
                         HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(50)),
                         BiomeFilter.biome()));
+
         register(context, LAPIS_GEODE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.LAPIS_GEODE_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(58), InSquarePlacement.spread(),
                         HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(50)),
                         BiomeFilter.biome()));
+
         register(context, NETHERITE_GEODE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHERITE_GEODE_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(80), InSquarePlacement.spread(),
                         HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(50)),
                         BiomeFilter.biome()));
+
         register(context, QUARTZ_GEODE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.QUARTZ_GEODE_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(65), InSquarePlacement.spread(),
                         HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(50)),
                         BiomeFilter.biome()));
+
         register(context, REDSTONE_GEODE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.REDSTONE_GEODE_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(58), InSquarePlacement.spread(),
                         HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(50)),
                         BiomeFilter.biome()));
+
         register(context, SLIME_GEODE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SLIME_GEODE_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(58), InSquarePlacement.spread(),
                         HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(50)),

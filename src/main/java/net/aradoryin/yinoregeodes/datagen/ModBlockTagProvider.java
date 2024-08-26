@@ -7,6 +7,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Blocks;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
@@ -23,6 +24,20 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.@NotNull Provider provider) {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .addTag(ModTags.Blocks.SHARD_STORAGE_BLOCKS);
+
+        tag(ModTags.Blocks.NEEDS_AMETHYST_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_AMETHYST_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+                .remove(ModTags.Blocks.NEEDS_AMETHYST_TOOL);
+
+//        tag(ModTags.Blocks.NEEDS_ECHO_TOOL)
+//                .addTag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_ECHO_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_NETHERITE_TOOL)
+                .remove(ModTags.Blocks.NEEDS_ECHO_TOOL);
 
         tag(ModTags.Blocks.CLUSTERS)
                 .add(Blocks.AMETHYST_CLUSTER)
