@@ -12,6 +12,13 @@
   "item.yinoregeodes.redstone_shard": "Redstone Shard",
   "item.yinoregeodes.slime_shard": "Slime Shard",
 
+  "item.yinoregeodes.amethyst_hammer": "Amethyst Hammer",
+  "item.yinoregeodes.diamond_hammer": "Diamond Hammer",
+  "item.yinoregeodes.echo_hammer": "Echo Hammer",
+  "item.yinoregeodes.gold_hammer": "Gold Hammer",
+  "item.yinoregeodes.iron_hammer": "Iron Hammer",
+  "item.yinoregeodes.netherite_hammer": "Netherite Hammer",
+
   "block.yinoregeodes.budding_coal": "Coal Cluster",
   "block.yinoregeodes.budding_copper": "Copper Cluster",
   "block.yinoregeodes.budding_diamond": "Diamond Cluster",
